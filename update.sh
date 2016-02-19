@@ -34,7 +34,7 @@ for repo in "${repos[@]}"; do
 	if [ -e "$repo/content.md" ]; then
 		gitRepo="${otherRepos[$repo]}"
 		if [ -z "$gitRepo" ]; then
-			gitRepo="https://github.com/docker-library/$repo"
+			gitRepo="https://github.com/baptistedonaux/docker-$repo"
 		fi
 		
 		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
@@ -55,10 +55,10 @@ for repo in "${repos[@]}"; do
 		
 		logo=
 		if [ -e "$repo/logo.png" ]; then
-			logo="![logo](https://raw.githubusercontent.com/docker-library/docs/master/$repo/logo.png)"
+			logo="![logo](https://raw.githubusercontent.com/baptistedonaux/docker-hhvm-doc/master/$repo/logo.png)"
 		elif [ -e "$repo/logo.svg" ]; then
 			# rawgit.com because: http://stackoverflow.com/a/16462143/433558
-			logo="![logo](https://rawgit.com/docker-library/docs/master/$repo/logo.svg)"
+			logo="![logo](https://rawgit.com/baptistedonaux/docker-hhvm-doc/master/$repo/logo.svg)"
 		fi
 		
 		compose=

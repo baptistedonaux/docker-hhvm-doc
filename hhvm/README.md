@@ -5,9 +5,9 @@
 -	[`3.9.1-jessie`, `3.9.1`, `3.9` (*3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/aa950fd392182f4251b55cbf6130a837c3de4049/3.9/Dockerfile)
 -	[`3.12.0-jessie`, `3.12.0`, `3.12`, `3`, `latest` (*master/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/aa950fd392182f4251b55cbf6130a837c3de4049/master/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/hhvm`)](https://github.com/docker-library/official-images/blob/master/library/hhvm). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`baptistedonaux/hhvm`)](https://github.com/baptistedonaux/official-images/blob/master/library/hhvm). This image is updated via pull requests to [the `baptistedonaux/official-images` GitHub repo](https://github.com/baptistedonaux/official-images).
 
-For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hhvm/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hhvm/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hhvm/tag-details.md` file](https://github.com/baptistedonaux/docker-hhvm-doc/blob/master/hhvm/tag-details.md) in [the `baptistedonaux/docker-hhvm-doc` GitHub repo](https://github.com/baptistedonaux/docker-hhvm-doc).
 
 # What is HHVM?
 
@@ -82,18 +82,21 @@ $ docker run --name my_nginx_container -v /path/to/default.conf:/etc/nginx/conf.
 Example `docker-compose.yml` for `hhvm`:
 
 ```yaml
-nginx:
-    image: nginx:latest
-    volumes:
-        - "/path/to/nginx.conf:/etc/nginx/nginx.conf:ro"
-        - "/path/to/project:/home/docker:ro"
-    links:
-        - "hhvm:hhvm"
+version: '2'
 
-hhvm:
-    image: hhvm:latest
-    volumes:
-        - "/path/to/project:/home/docker:rw"
+services:
+	nginx:
+	    image: nginx:latest
+	    volumes:
+	        - "/path/to/nginx.conf:/etc/nginx/nginx.conf:ro"
+	        - "/path/to/project:/home/docker:ro"
+
+	hhvm:
+	    image: hhvm:latest
+	    volumes:
+	        - "/path/to/project:/home/docker:rw"
+	    dns_search:
+	        - "hhvm"
 ```
 
 # License
@@ -102,21 +105,17 @@ This image is licensed under the MIT License (see [LICENSE](https://github.com/b
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.3.
-
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+This image supported on Docker version 1.10.0.
 
 # User Feedback
 
 ## Documentation
 
-Documentation for this image is stored in the [`hhvm/` directory](https://github.com/docker-library/docs/tree/master/hhvm) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`hhvm/` directory](https://github.com/baptistedonaux/docker-hhvm-doc/tree/master/hhvm) of the [`baptistedonaux/docker-hhvm-doc` GitHub repo](https://github.com/baptistedonaux/docker-hhvm-doc). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/baptistedonaux/docker-hhvm-doc/blob/master/hhvm/README.md) before attempting a pull request.
 
 ## Issues
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/baptistedonaux/docker-hhvm/issues).
-
-You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 
