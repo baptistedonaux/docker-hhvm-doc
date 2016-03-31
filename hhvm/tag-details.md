@@ -4,8 +4,10 @@
 
 -	hhvm:latest
 -	hhvm:3
+-	hhvm:3.13
+-	hhvm:3.13.0
 -	hhvm:3.12
--	hhvm:3.12.0
+-	hhvm:3.12.1
 -	hhvm:3.9
 -	hhvm:3.9.1
 -	hhvm:3.6
