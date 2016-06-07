@@ -2,7 +2,7 @@
 
 -	[`3.3.7-jessie`, `3.3.7`, `3.3` (*3.3/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/4da7a2430ca7afe5f36aab3eede9a7521cbe6211/3.3/Dockerfile)
 -	[`3.6.6-jessie`, `3.6.6`, `3.6` (*3.6/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/4da7a2430ca7afe5f36aab3eede9a7521cbe6211/3.6/Dockerfile)
--	[`3.9.2-jessie`, `3.9.2`, `3.9` (*3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/4da7a2430ca7afe5f36aab3eede9a7521cbe6211/3.9/Dockerfile)
+-	[`3.9.3-jessie`, `3.9.3`, `3.9` (*3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/6f85998e8bb4b1185fab7c14c2a455d50a2ca377/3.9/Dockerfile)
 -	[`3.12.2-jessie`, `3.12.2`, `3.12`, (*3.12/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/35473b57378ea57a33ea114752e0bc6738bae00c/3.12/Dockerfile)
 -	[`3.13.1-jessie`, `3.13.1`, `3.13`, `3`, `latest` (*master/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/4da7a2430ca7afe5f36aab3eede9a7521cbe6211/master/Dockerfile)
 
