@@ -3,8 +3,8 @@
 -	[`3.3.7-jessie`, `3.3.7`, `3.3` (*3.3/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/fa7f071a42f11384d397a4b8533932f5660e5e71/3.3/Dockerfile)
 -	[`3.6.6-jessie`, `3.6.6`, `3.6` (*3.6/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/fa7f071a42f11384d397a4b8533932f5660e5e71/3.6/Dockerfile)
 -	[`3.9.10-jessie`, `3.9.10`, `3.9` (*3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/5ac8a82d98c71eda8a718ad903d7e3ef15bd95ee/3.9/Dockerfile)
--	[`3.12.10-jessie`, `3.12.10`, `3.12`, (*3.12/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/b02adf999dc32795e9cbbb33192f379dc14e0671/3.12/Dockerfile)
--	[`3.15.2-jessie`, `3.15.2`, `3.15`, `3`, `latest` (*master/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/b02adf999dc32795e9cbbb33192f379dc14e0671/master/Dockerfile)
+-	[`3.12.11-jessie`, `3.12.11`, `3.12`, (*3.12/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/ce63902da3f0ad164576eceeb1111c0cfc030ce9/3.12/Dockerfile)
+-	[`3.15.3-jessie`, `3.15.3`, `3.15`, `3`, `latest` (*master/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/ce63902da3f0ad164576eceeb1111c0cfc030ce9/master/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`baptistedonaux/hhvm`)](https://github.com/baptistedonaux/official-images/blob/master/library/hhvm). This image is updated via pull requests to [the `baptistedonaux/official-images` GitHub repo](https://github.com/baptistedonaux/official-images).
 
